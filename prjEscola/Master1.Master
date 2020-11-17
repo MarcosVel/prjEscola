@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.master.cs" Inherits="prjAdoNet.Master1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="Content/bootadmin.min.css" rel="stylesheet" />
+
+    <title>Exemplo ADO.NET</title>
+    <style>
+        .efeito_Panel {
+            box-shadow: 0 10px 24px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+            margin-right: 4px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .efeito_Card {
+            box-shadow: 0 10px 24px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+            margin-right: 4px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <form runat="server">
+        <asp:ScriptManager runat="server" EnablePartialRendering="true">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+
+            </Scripts>
+        </asp:ScriptManager>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
+            <a class="navbar-brand" href="#">NOME DO SEU SISTEMA</a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope"></i>5</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i>3</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="d-flex">
+            <div class="sidebar sidebar-white bg-white efeito_Panel">
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fa fa-save"></i>Menu Item</a></li>
+                    <li>
+                        <a href="#sm_expand_1" data-toggle="collapse">
+                            <i class="fa fa-user-plus"></i>Cadastro
+                        </a>
+                        <ul id="sm_expand_1" class="list-unstyled collapse">
+                            <li><a href="CFuncionario.aspx">Funcionario</a></li>
+                            <li><a href="CDepartamento.aspx">Departamento</a></li>
+                            <li><a href="#">Submenu Item</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Ajuda</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#"><i class="fa fa-address-card"></i>Movimentação</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-link"></i>Relatórios</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-link"></i>Ajuda</a></li>
+                </ul>
+            </div>
+
+            <div class="content p-4">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+        <script src="Scripts/bootadmin.min.js"></script>
+    </form>
+</body>
+</html>
+
+
