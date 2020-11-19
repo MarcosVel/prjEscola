@@ -2391,6 +2391,10 @@ namespace prjEscola.App_Code.DAL
                 return SqlHelper.ExecuteXmlReader(transaction, CommandType.StoredProcedure, spName);
             }
         }
+
+        internal static DataSet ExecuteDataset(object connString, CommandType text, string meuSQL) {
+            throw new NotImplementedException();
+        }
         #endregion
 
     }

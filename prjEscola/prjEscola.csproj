@@ -118,6 +118,7 @@
     <Content Include="Content\navabar2.css" />
     <Content Include="Content\navBarExemplo.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="cTurma.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="font\glyphicons-halflings-regular.svg" />
@@ -296,6 +297,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cTurma.aspx.cs">
+      <DependentUpon>cTurma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cTurma.aspx.designer.cs">
+      <DependentUpon>cTurma.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAL\SQLHelper.cs" />
     <Compile Include="Default.aspx.cs">
