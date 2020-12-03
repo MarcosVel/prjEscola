@@ -13,67 +13,58 @@ namespace prjEscola {
     public partial class cTurma {
 
         /// <summary>
-        /// Controle txtNome.
+        /// Controle UpdatePanel1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// Controle txtCPF.
+        /// Controle cboInstrutor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCPF;
+        protected global::System.Web.UI.WebControls.DropDownList cboInstrutor;
 
         /// <summary>
-        /// Controle txtDtNascimento.
+        /// Controle cboCurso.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDtNascimento;
+        protected global::System.Web.UI.WebControls.DropDownList cboCurso;
 
         /// <summary>
-        /// Controle txtTelefone.
+        /// Controle txtData_Inicio.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefone;
+        protected global::System.Web.UI.WebControls.TextBox txtData_Inicio;
 
         /// <summary>
-        /// Controle txtemail.
+        /// Controle txtData_Termino.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtemail;
+        protected global::System.Web.UI.WebControls.TextBox txtData_Termino;
 
         /// <summary>
-        /// Controle txtMae.
+        /// Controle txtCargaHoraria.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMae;
-
-        /// <summary>
-        /// Controle txtPai.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPai;
+        protected global::System.Web.UI.WebControls.TextBox txtCargaHoraria;
 
         /// <summary>
         /// Controle cmdConfirmar.
@@ -112,12 +103,12 @@ namespace prjEscola {
         protected global::System.Web.UI.WebControls.Button cmdSair;
 
         /// <summary>
-        /// Controle dgAlunos.
+        /// Controle grvTurma.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgAlunos;
+        protected global::System.Web.UI.WebControls.GridView grvTurma;
     }
 }

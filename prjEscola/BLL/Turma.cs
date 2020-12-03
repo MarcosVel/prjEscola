@@ -8,7 +8,7 @@ using System.Web;
 namespace prjEscola.BLL {
     public class Turma {
         private static string connString = Funcoes.connString;
-        
+
         private Int32 _ID_TURMA;
         private Int32 _ID_INSTRUTOR;
         private Int32 _ID_CURSO;
@@ -25,7 +25,8 @@ namespace prjEscola.BLL {
 
         public void Inserir() {
             string meuSQL = "INSERT INTO TB_TURMA(ID_INSTRUTOR, ID_CURSO, DATA_INICIO, DATA_TERMINO, CARGA_HORARIA) VALUES " +
-                   "('" + _ID_INSTRUTOR + "', '" + _ID_CURSO + "', '" + Funcoes.DateToDB(_DATA_INICIO) + "', '" + Funcoes.DateToDB(_DATA_TERMINO) + "', '" + _CARGA_HORARIA + "');";
+                   "('" + _ID_INSTRUTOR + "', '" + _ID_CURSO + "', '" + (_DATA_INICIO) + "', '" + (_DATA_TERMINO) + "'," +
+                   " '" + _CARGA_HORARIA + "')";
             SqlHelper.ExecuteNonQuery(connString, CommandType.Text, meuSQL);
         }
         public void Alterar() {
@@ -52,11 +53,11 @@ namespace prjEscola.BLL {
         }
 
         public static DataSet PreencheGridTurma() {
-            string meuSQL = "SELECT        dbo.TB_TURMA.ID_TURMA, dbo.TB_INSTRUTOR.NOME_INSTRUTOR, dbo.TB_CURSO.DSC_CURSO, dbo.TB_TURMA.ID_INSTRUTOR, dbo.TB_TURMA.ID_CURSO, dbo.TB_TURMA.DATA_INICIO, dbo.TB_TURMA.DATA_TERMINO, "+
-                         "dbo.TB_TURMA.CARGA_HORARIA"+
-"FROM            dbo.TB_TURMA INNER JOIN"+
-                         "dbo.TB_INSTRUTOR ON dbo.TB_TURMA.ID_INSTRUTOR = dbo.TB_INSTRUTOR.ID_INSTRUTOR INNER JOIN"+
-                         "dbo.TB_CURSO ON dbo.TB_TURMA.ID_CURSO = dbo.TB_CURSO.ID_CURSO";
+            string meuSQL = "SELECT dbo.TB_TURMA.ID_TURMA, dbo.TB_INSTRUTOR.NOME_INSTRUTOR, dbo.TB_CURSO.DSC_CURSO, dbo.TB_TURMA.ID_INSTRUTOR, dbo.TB_TURMA.ID_CURSO, dbo.TB_TURMA.DATA_INICIO, dbo.TB_TURMA.DATA_TERMINO, " 
+                + " dbo.TB_TURMA.CARGA_HORARIA" 
+                + " FROM dbo.TB_TURMA INNER JOIN" 
+                + " dbo.TB_INSTRUTOR ON dbo.TB_TURMA.ID_INSTRUTOR = dbo.TB_INSTRUTOR.ID_INSTRUTOR INNER JOIN" 
+                + " dbo.TB_CURSO ON dbo.TB_TURMA.ID_CURSO = dbo.TB_CURSO.ID_CURSO";
             DataSet ds = SqlHelper.ExecuteDataset(connString, CommandType.Text, meuSQL);
             return ds;
         }
@@ -75,4 +76,5 @@ namespace prjEscola.BLL {
                 _CARGA_HORARIA = Convert.ToInt32(dr["CARGA_HORARIA"]);
             }
         }
+    }
 }
