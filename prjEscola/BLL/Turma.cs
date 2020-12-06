@@ -33,9 +33,9 @@ namespace prjEscola.BLL {
             string meuSQL = " UPDATE TB_TURMA SET " +
                 " ID_INSTRUTOR = '" + _ID_INSTRUTOR + "', " +
                 " ID_CURSO = '" + _ID_CURSO + "', " +
-                " DATA_INICIO = '" + Funcoes.DateToDB(_DATA_INICIO) + "', " +
-                " DATA_TERMINO = '" + Funcoes.DateToDB(_DATA_TERMINO) + "', " +
-                " CARGA_HORARIA = '" + _CARGA_HORARIA + "" +
+                " DATA_INICIO = '" + _DATA_INICIO + "', " +
+                " DATA_TERMINO = '" + _DATA_TERMINO + "', " +
+                " CARGA_HORARIA = '" + _CARGA_HORARIA + "' " +
                 " WHERE ID_TURMA = " + _ID_TURMA;
             SqlHelper.ExecuteNonQuery(connString, CommandType.Text, meuSQL);
 

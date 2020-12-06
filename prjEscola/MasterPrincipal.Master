@@ -16,7 +16,7 @@
         .efeito_Panel {
             box-shadow: 0 10px 24px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
             margin-right: 4px;
-            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
             font-size: 14px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
@@ -55,23 +55,23 @@
         <div class="d-flex">
             <div class="sidebar sidebar-white bg-white efeito_Panel">
                 <ul class="list-unstyled">
-                    <li><a href="#"><i class="fa fa-save"></i>Menu Item</a></li>
+                    <li><a href="#"><i class="fa fa-save"></i> Menu Item</a></li>
                     <li>
                         <a href="#sm_expand_1" data-toggle="collapse">
-                            <i class="fa fa-user-plus"></i>Cadastro
+                            <i class="fa fa-user-plus"></i> Cadastro
                         </a>
                         <ul id="sm_expand_1" class="list-unstyled collapse">
-                            <li><a href="CFuncionario.aspx">Aluno</a></li>
-                            <li><a href="CDepartamento.aspx">Departamento</a></li>
+                            <li><a href="cAluno.aspx">Aluno</a></li>
+                            <li><a href="cTurma.aspx">Turma</a></li>
                             <li><a href="#">Submenu Item</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Ajuda</a></li>
                         </ul>
 
                     </li>
-                    <li><a href="#"><i class="fa fa-address-card"></i>Movimentação</a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-link"></i>Relatórios</a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-link"></i>Ajuda</a></li>
+                    <li><a href="#"><i class="fa fa-address-card"></i> Movimentação</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-link"></i> Relatórios</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-link"></i> Ajuda</a></li>
                 </ul>
             </div>
 
