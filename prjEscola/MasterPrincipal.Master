@@ -65,10 +65,8 @@
                             <li><a href="cTurma.aspx">Turma</a></li>
                             <li><a href="cInstrutor.aspx">Instrutor</a></li>
                             <li><a href="cCurso.aspx">Curso</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Ajuda</a></li>
+                            <li><a href="cMatricula.aspx">Matrícula</a></li>
                         </ul>
-
                     </li>
                     <li><a href="#"><i class="fa fa-address-card"></i> Movimentação</a></li>
                     <li><a href="#"><i class="fa fa-fw fa-link"></i> Relatórios</a></li>

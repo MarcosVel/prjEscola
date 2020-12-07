@@ -84,11 +84,7 @@ namespace prjEscola {
             txtData_Termino.Text = Convert.ToString(turma.DATA_TERMINO);
             txtCargaHoraria.Text = Convert.ToString(turma.CARGA_HORARIA);
         }
-        /*
-        protected void grvTurma_RowCommand(object sender, GridViewCommandEventArgs e) {
-            MostrarDados(e.CommandArgument.ToString());
-        }
-        */
+        
         protected void dgTurma_SelectedIndexChanged(object sender, EventArgs e) {
             MostrarDados(dgTurma.SelectedItem.Cells[0].Text);
             cmdConfirmar.Text = "Alterar";

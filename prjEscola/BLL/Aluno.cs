@@ -82,5 +82,11 @@ namespace prjEscola.BLL {
                 _TELEFONE = Convert.ToString(dr["TELEFONE"]);
             }
         }
+
+        public static DataSet PreencheCboAluno() {
+            string meuSQL = "SELECT ID_ALUNO, NOME FROM TB_ALUNO";
+            DataSet ds = SqlHelper.ExecuteDataset(connString, CommandType.Text, meuSQL);
+            return ds;
+        }
     }
 }

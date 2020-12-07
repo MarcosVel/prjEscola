@@ -108,6 +108,7 @@
     <Content Include="cAluno.aspx" />
     <Content Include="cCurso.aspx" />
     <Content Include="cInstrutor.aspx" />
+    <Content Include="cMatricula.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootadmin.css" />
     <Content Include="Content\bootadmin.min.css" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="cInstrutor.aspx.designer.cs">
       <DependentUpon>cInstrutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cMatricula.aspx.cs">
+      <DependentUpon>cMatricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cMatricula.aspx.designer.cs">
+      <DependentUpon>cMatricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

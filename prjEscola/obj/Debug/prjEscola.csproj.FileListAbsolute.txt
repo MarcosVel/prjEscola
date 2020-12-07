@@ -54,3 +54,4 @@ C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csproj.Core
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csproj.CopyComplete
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.dll
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.pdb
+C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csprojAssemblyReference.cache
