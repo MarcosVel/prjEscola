@@ -106,6 +106,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="cAluno.aspx" />
+    <Content Include="cCurso.aspx" />
+    <Content Include="cInstrutor.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootadmin.css" />
     <Content Include="Content\bootadmin.min.css" />
@@ -290,6 +292,20 @@
     </Compile>
     <Compile Include="cAluno.aspx.designer.cs">
       <DependentUpon>cAluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cCurso.aspx.cs">
+      <DependentUpon>cCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cCurso.aspx.designer.cs">
+      <DependentUpon>cCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cInstrutor.aspx.cs">
+      <DependentUpon>cInstrutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cInstrutor.aspx.designer.cs">
+      <DependentUpon>cInstrutor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
