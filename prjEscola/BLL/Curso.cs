@@ -23,14 +23,14 @@ namespace prjEscola.BLL {
 
         public void Inserir()
         {
-            string meuSQL = "INSERT INTO TB_INSTRUTOR (DSC_CURSO, REQUISITO, CARGA_HORARIA, VALOR_CURSO) VALUES " +
+            string meuSQL = "INSERT INTO TB_CURSO (DSC_CURSO, REQUISITO, CARGA_HORARIA, VALOR_CURSO) VALUES " +
                 "('" + _DSC_CURSO + "', '" + _REQUISITO + "', '" + _CARGA_HORARIA + "', '" + _VALOR_CURSO + "')";
             SqlHelper.ExecuteNonQuery(connString, CommandType.Text, meuSQL);
         }
 
         public void Alterar()
         {
-            string meuSQL = " UPDATE TB_INSTRUTOR SET " +
+            string meuSQL = " UPDATE TB_CURSO SET " +
                 " DSC_CURSO = '" + _DSC_CURSO + "', " +
                 " REQUISITO = '" + _REQUISITO + "', " +
                 " CARGA_HORARIA = '" + _CARGA_HORARIA + "', " +

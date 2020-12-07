@@ -1,5 +1,3 @@
-C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csprojAssemblyReference.cache
-C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csproj.CoreCompileInputs.cache
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\prjEscola.dll.config
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\prjEscola.dll
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\prjEscola.pdb
@@ -52,6 +50,7 @@ C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\Antlr3.Runtime.pdb
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\pt-br\System.Web.Optimization.resources.dll
 C:\Users\marcos\source\repos\prjEscola\prjEscola\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csproj.CoreCompileInputs.cache
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.csproj.CopyComplete
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.dll
 C:\Users\marcos\source\repos\prjEscola\prjEscola\obj\Debug\prjEscola.pdb

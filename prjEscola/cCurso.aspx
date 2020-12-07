@@ -15,39 +15,32 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="nome">
-                                            Instrutor</label>
+                                            Descrição do Curso</label>
 
-                                        <asp:DropDownList ID="cboInstrutor" CssClass="form-control" runat="server"></asp:DropDownList>
+                                        <asp:TextBox ID="txtDescCurso" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="nome">
-                                            Curso</label>
+                                            Requisitos</label>
 
-                                        <asp:DropDownList ID="cboCurso" CssClass="form-control" runat="server" OnSelectedIndexChanged="cboCurso_SelectedIndexChanged"></asp:DropDownList>
+                                        <asp:TextBox ID="txtRequisito" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <label for="nome">
-                                            Data de Início</label>
-                                        <asp:TextBox ID="txtData_Inicio" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="nome">
-                                            Data de Término
-                                        </label>
-                                        <asp:TextBox ID="txtData_Termino" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
-
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <label for="nome">
-                                            Carga Horária 
-                                        </label>
+                                            Carga Horária</label>
                                         <asp:TextBox ID="txtCargaHoraria" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="nome">
+                                            Valor do Curso
+                                        </label>
+                                        <asp:TextBox ID="txtValorCurso" runat="server" Columns="50" CssClass="form-control" MaxLength="50" Width="100%" TabIndex="1"></asp:TextBox>
 
                                     </div>
-                                </div>
+                                    
+                                </div> 
                             </div>
 
                         </fieldset>
@@ -71,6 +64,46 @@
                                 </div>
                             </div>
                         </div>
+
+                        <fieldset>
+
+                            <div>
+                                <h4>Cursos Cadastrados</h4>
+                            </div>                            
+
+                            <div>
+                                <asp:DataGrid ID="dgCurso" runat="server" AutoGenerateColumns="False"
+                                    BackColor="White" BorderColor="Black" BorderStyle="Double" BorderWidth="0px"
+                                    CellPadding="4" CellSpacing="1" HorizontalAlign="Left" Style="border-right: black thin solid; border-top: black thin solid; border-left: black thin solid; border-bottom: black thin solid; background-color: black"
+                                    Width="492px" AllowPaging="True" TabIndex="2" OnSelectedIndexChanged="dgCurso_SelectedIndexChanged">
+                                    
+                                    <FooterStyle BackColor="White" CssClass="dgFooterStyle" Font-Bold="False" Font-Italic="False"
+                                        Font-Overline="False" Font-Strikeout="False" Font-Underline="False"
+                                        ForeColor="#333333" />
+                                    <SelectedItemStyle BackColor="#339966" CssClass="dgSelectedItemStyle" Font-Bold="True"
+                                        ForeColor="White" />
+                                    <PagerStyle BackColor="White" Font-Bold="True" Font-Italic="False" Font-Names="Arial"
+                                        Font-Overline="False" Font-Size="Small" Font-Strikeout="False" Font-Underline="False"
+                                        ForeColor="Black" HorizontalAlign="Center" Mode="NumericPages" NextPageText=""
+                                        PrevPageText="" />
+                                    <AlternatingItemStyle CssClass="dgAlternatingItemStyle" />
+                                    <ItemStyle BackColor="White" CssClass="dgItemStyle" Font-Bold="False" Font-Italic="False"
+                                        Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
+                                        HorizontalAlign="Left" />
+                                    <HeaderStyle BackColor="#387030" CssClass="dgHeaderStyle" Font-Bold="True" Font-Italic="False"
+                                        Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="White"
+                                        HorizontalAlign="Left" />
+                                    <Columns>
+                                        <asp:BoundColumn DataField="ID_CURSO" Visible="False"></asp:BoundColumn>
+                                        <asp:ButtonColumn CommandName="Select" DataTextField="DSC_CURSO" HeaderText="CURSO"><HeaderStyle Width="50%" /></asp:ButtonColumn>
+                                        <asp:ButtonColumn CommandName="Select" DataTextField="REQUISITO" HeaderText="REQUISITO"><HeaderStyle Width="50%" /></asp:ButtonColumn>
+                                        <asp:ButtonColumn CommandName="Select" DataTextField="CARGA_HORARIA" HeaderText="CARGA HORÁRIA"></asp:ButtonColumn>
+                                        <asp:ButtonColumn CommandName="Select" DataTextField="VALOR_CURSO" HeaderText="VALOR CURSO"></asp:ButtonColumn>
+                                    </Columns>
+                                </asp:DataGrid>
+                            </div>
+
+                        </fieldset>
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
